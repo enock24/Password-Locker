@@ -78,4 +78,22 @@ class TestUser(unittest.TestCase):
 
         self.assertTrue(user_exists)
 
+    class TestCredential(unittest.TestCase):
+        def setUp(self):
+            '''
+            Set up method to run before each test cases.
+            '''
+            self.new_credential = Credential("Towett","twitter", "enock24","enock2470")
+
+        def test_init(self):
+            '''
+            test_init test case to test if the object is initialized properly
+            '''
+
+            self.assertEqual(self.new_credential.name,"Towett")
+            self.assertEqual(self.new_credential.account,"twitter")
+            self.assertEqual(self.new_credential.username,"enock24")
+            self.assertEqual(self.new_credential.password,"enock2470")        
+
+
 
