@@ -117,7 +117,19 @@ class TestUser(unittest.TestCase):
             self.new_credential.save_credential()
             test_credential = Credential("Towett","twitter","enock24","enock2470") # new credential
             test_credential.save_credential()
-            self.assertEqual(len(Credential.credential_list),2)        
+            self.assertEqual(len(Credential.credential_list),2) 
+
+        def test_delete_credential(self):
+            '''
+            test_delete_credential to test if we can remove a credential from our credential list
+            '''
+            self.new_credential.save_credential()
+            test_credential = Credential("Towett","twitter","enock24","enock2470") # new credential
+            test_credential.save_credential()
+
+            self.new_credential.delete_credential()# Deleting a credential object
+            self.assertEqual(len(Credential.credential_list),1)
+ 
 
      
 
