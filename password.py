@@ -54,3 +54,15 @@ class User:
 
         return False   
 
+class Credential:
+        '''
+        Class that generates new instances of credential
+        '''
+        credential_list=[]
+
+    def __init__(self, name, account, username, password):
+        self.name = name
+        self.account = account
+        self.username = username
+        self.password = password   
+
