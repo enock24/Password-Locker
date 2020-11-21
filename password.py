@@ -110,5 +110,14 @@ class Credential:
             if credential.name == name:
                     return True
 
-        return False     
+        return False    
+
+    @classmethod
+    def display_credentials(cls):
+        '''
+        method that returns the credential list
+        '''
+        return cls.credential_list  
+
+
 
