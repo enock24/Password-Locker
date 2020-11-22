@@ -16,11 +16,11 @@ def generate_password(user):
     return user.generate_random_password()
 
 
-# def save_users(user):
-#     '''
-#     Function to save user
-#     '''
-#     user.save_user()
+def save_users(user):
+    '''
+    Function to save user
+    '''
+    user.save_user()
 
 
 # def del_user(user):
