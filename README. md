@@ -1,0 +1,27 @@
+# Password Locker
+
+## Author
+ Towett Enock K
+
+## Description
+This is a project that enable clients to store and retrieve their credentials upon log-in and create new credentials/passwords and even generate random passwords for different accounts.
+
+## Features
+* Create account for new user
+* Loggin in
+* Option of computer generated password
+* Create new credential
+* Delete credential
+* Display existing credentials
+* Search credential by site name
+* exit for leaving the site
+
+## Technologies Used
+- PYTHON
+- Git
+
+## Support and contact details
+enookimuu@gmail.com
+
+### License
+- Licensed under the  [MIT license](LICENSE).
