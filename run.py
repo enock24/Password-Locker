@@ -179,7 +179,7 @@ def main():
     elif ask == "yes":
         print("Please enter your username and password to login")
         username = input("Username > ")
-        account_password = getpass.getpass()
+        # account_password = getpass.getpass()
 
         while True:
             print("""
