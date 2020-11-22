@@ -30,12 +30,12 @@ def del_user(user):
     user.delete_user()
 
 
-# def create_credential(name, account, username, password):
-#     '''
-#     Function to create a new credential
-#     '''
-#     new_credential = Credential(name, account, username, password)
-#     return new_credential
+def create_credential(name, account, username, password):
+    '''
+    Function to create a new credential
+    '''
+    new_credential = Credential(name, account, username, password)
+    return new_credential
 
 
 # def save_credential(credential):
