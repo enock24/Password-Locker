@@ -23,11 +23,11 @@ def save_users(user):
     user.save_user()
 
 
-# def del_user(user):
-#     '''
-#     Function to delete a user
-#     '''
-#     user.delete_user()
+def del_user(user):
+    '''
+    Function to delete a user
+    '''
+    user.delete_user()
 
 
 # def create_credential(name, account, username, password):
