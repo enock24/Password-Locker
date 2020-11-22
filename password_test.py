@@ -93,7 +93,7 @@ class TestUser(unittest.TestCase):
             self.assertEqual(self.new_credential.name,"Towett")
             self.assertEqual(self.new_credential.account,"twitter")
             self.assertEqual(self.new_credential.username,"enock24")
-            self.assertEqual(self.new_credential.password,"enock2470")   
+            self.assertEqual(self.new_credential.password,"enock2470")        
 
         def test_save_credential(self):
             '''
@@ -117,7 +117,7 @@ class TestUser(unittest.TestCase):
             self.new_credential.save_credential()
             test_credential = Credential("Towett","twitter","enock24","enock2470") # new credential
             test_credential.save_credential()
-            self.assertEqual(len(Credential.credential_list),2) 
+            self.assertEqual(len(Credential.credential_list),2)        
 
         def test_delete_credential(self):
             '''
@@ -140,7 +140,7 @@ class TestUser(unittest.TestCase):
 
             found_credential = Credential.find_by_username("enock24")
 
-            self.assertEqual(found_credential.username,test_credential.username) 
+            self.assertEqual(found_credential.username,test_credential.username)   
 
         def test_credential_exists(self):
             '''
@@ -152,19 +152,18 @@ class TestUser(unittest.TestCase):
 
             credential_exists = Credential.credential_exist("Towett")
 
-            self.assertTrue(credential_exists) 
+            self.assertTrue(credential_exists)
 
         def test_display_all_credential(self):
             '''
             method that returns a list of all credential saved
             '''
 
-            self.assertEqual(Credential.display_credentials(),Credential.credential_list)  
-
+            self.assertEqual(Credential.display_credentials(),Credential.credential_list)    
+    
 
 if __name__ == '__main__':
     unittest.main()
- 
 
      
 
